@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: darkslategray;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.backlog {
+  margin: 10px 20px;
+  width: 180px;
+  padding: 10px 20px;
+  background-color: rgb(241, 208, 97);
+  border: 5px double darkorange;
+  font-size: 1em;
+  font-weight: 600;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn1 {
+  position: relative;
+  bottom: 5px;
+  background-color: rgb(83, 248, 210);
+  font-size: 0.6em;
+  font-weight: 900;
+  border: 5px double darkorange;
+  color: black;
+  padding: 20px;
+  outline: none;
+}
+.btn2 {
+  margin: 10px 20px;
+  background-color: rgb(238, 108, 130);
+  color: black;
+  border: 5px double darkorange;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 10px 40px;
+  outline: none;
+}
+header {
+  background-color: #53f8d2;
+  border: 3px solid rgb(92, 2, 63);
+  color: rgb(92, 2, 63);
+  text-align: center;
+  padding: 30px;
+}
+input.entry {
+  background-color: rgb(83, 248, 210);
+  margin: 20px;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: rgb(82, 3, 116);
+  border: 5px double darkorange;
+  padding: 5px;
+}
+.list {
+  width: 500px;
+  height: 1200px;
+  margin: 20px;
+  background-color: rgb(245, 232, 212);
+  font-size: 24px;
+  border: 5px double darkorange;
+}
+@media screen and (max-width: 600px) {
+  .backlog {
+    position: relative;
+    right: 30px;
+    font-size: 0.75em;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    background-color: darkorange;
+  }
+  .btn1 {
+    position: relative;
+    left: 20px;
+    outline: none;
+  }
+  .btn2 {
+    margin: 20px;
+    font-size: 0.9em;
+  }
+
+  input.entry {
+    font-size: 0.9em;
+  }
+  .list {
+    width: 300px;
   }
 }
